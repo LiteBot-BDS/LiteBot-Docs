@@ -1,24 +1,26 @@
 import { defineConfig } from 'dumi';
 
-const repo = 'dumi-template';
+const repo = 'LiteBot Docs';
 
 export default defineConfig({
+  locales: [
+    ['zh-CN', '中文'],
+    ['en-US', 'English'],
+  ],
   title: repo,
-  favicon:
-    'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
-  logo:
-    'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
+  favicon: './images/favicon.ico',
+  logo: './images/logo.png',
   outputPath: 'docs-dist',
   mode: 'site',
   hash: true,
   // Because of using GitHub Pages
-  base: `/${repo}/`,
-  publicPath: `/${repo}/`,
+  base: `/`,
+  publicPath: `/`,
   navs: [
     null,
     {
-      title: 'GitHub',
-      path: 'https://github.com/umijs/dumi-template',
+      title: 'Gitee',
+      path: 'https://gitee.com/litebot/litebot-core',
     },
   ],
   // more config: https://d.umijs.org/config
