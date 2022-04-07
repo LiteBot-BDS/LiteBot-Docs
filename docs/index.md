@@ -3,7 +3,7 @@ title: LiteBot - 下一代群组服机器人
 order: 10
 hero:
   title: LiteBot
-  desc: 📖 下一代群组服机器人
+  desc: 📖 下一代基岩版MC群组服机器人
   actions:
     - text: 开始使用
       link: /guide/intro
