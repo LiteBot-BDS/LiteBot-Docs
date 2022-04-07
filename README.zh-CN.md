@@ -1,18 +1,33 @@
-# 🌟 Dumi Template
+# 🌟 LiteBot 文档中心
 
-为组件开发场景而生的文档模板
+LiteBot configuration guide, tutorial, API documentation
 
 [English](./README.md) | 简体中文
 
-## 🚀 如何使用？
+## 🚀 访问地址
 
-![](https://gw.alipayobjects.com/zos/bmw-prod/91791904-cdde-4408-959d-72fd0c9049b1/kj80x6lv_w1918_h352.png)
+[https://docs.litebot-bds.top](https://docs.litebot-bds.top)
 
-## ✨ 在线预览
+## ✨ 文档撰写
 
-https://umijs.github.io/dumi-template/
+### 准备工作
 
-## 📒 目录介绍
+1. 克隆本仓库
+
+```bash
+git clone git@github.com:LiteBot-BDS/LiteBot-Docs.git
+```
+
+2. 进入仓库目录，安装依赖模块：
+
+```bash
+cd LiteBot-Docs
+npm install --save
+```
+
+3. 进入 docs 目录，开始编写文档
+
+### 目录介绍
 
 ```
 ├── docs                   文档存放路径
@@ -27,9 +42,7 @@ https://umijs.github.io/dumi-template/
 └── tsconfig.json          typescript 配置
 ```
 
-其余文件可自行查阅了解。
-
-## 🤖 命令介绍
+### 命令介绍
 
 | 名称                    | 描述           | 备注                                                                 |
 | ----------------------- | -------------- | -------------------------------------------------------------------- |
@@ -43,9 +56,6 @@ https://umijs.github.io/dumi-template/
 | `npm run docs:deploy`   | 文档发布       | 这里默认是使用了 GitHub Pages                                        |
 | `npm run deploy`        | 文档打包发布   | -                                                                    |
 
-## 交流群
+### 更多内容
 
-<div>
-  <img data-type="dingtalk" src="https://gw.alipayobjects.com/zos/bmw-prod/ce3439e7-3bf9-4031-b823-6473439ec9e6/kxkiis4c_w1004_h1346.jpeg" width="300" />
-  <img data-type="wechat" src="https://gw.alipayobjects.com/zos/bmw-prod/c18bc2a5-719a-48ca-b225-c79ef88bfb43/k7m10ymd_w1004_h1346.jpeg" width="300" />
-</div>
+请参阅 dumi 文档：[https://d.umijs.org/zh-CN/guide](https://d.umijs.org/zh-CN/guide)
