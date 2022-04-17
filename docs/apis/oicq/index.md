@@ -2,15 +2,16 @@
 title: OICQ
 toc: menu
 nav:
-  path: /openapi
   title: 开放API（开发中）
   order: 2
 group:
-  path: /openapi/intro
-  title: API总览
-  order: 1
+  title: OICQ
+  order: 2
 ---
 
+<Alert type="error">
+  注意：功能尚未完善
+</Alert>
 ## QQ 事件监听
 
 `LB.OICQ.onEvent(event,callback)`
@@ -24,7 +25,7 @@ group:
 
 ```javascript
 //监听群成员增加事件
-LB.OICQ.onEvent('notice.group.increase', e => {
+LB.OICQ.onEvent('notice.group.increase', function(e) {
   log.debug('新人来辣！');
   //将事件对象输出到控制台
   console.log(e);

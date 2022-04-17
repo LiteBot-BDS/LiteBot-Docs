@@ -6,7 +6,7 @@ hero:
   desc: 📖 下一代基岩版MC群组服机器人
   actions:
     - text: 开始使用
-      link: /guide/intro
+      link: /guide
 features:
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/881dc458-f20b-407b-947a-95104b5ec82b/k79dm8ih_w144_h144.png
     title: 开箱即用

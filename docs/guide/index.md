@@ -2,20 +2,13 @@
 title: LiteBot简介
 toc: menu
 nav:
-  path: /guide
   title: 配置指南
+  path: /guide
   order: 1
 group:
-  path: /guide/intro
   title: LiteBot简介
   order: 1
 ---
-
-## 前言：为什么需要群组服机器人
-
-为了让 QQ 群与基岩版服务器之间的信息能够实现互联互通，群服互通的概念应运而生。群服互通需要处理的内容包括聊天消息、以及服务器控制指令等。
-
-群组服机器人
 
 ## 关于 LiteBot
 
@@ -34,9 +27,9 @@ group:
 
 ## 功能示例
 
-<img src = "../public/images/intro/01.png" width="40%"></br>
-<img src = "../public/images/intro/02.png" width="40%"></br>
-<img src = "../public/images/intro/03.png" width="40%"></br>
-<img src = "../public/images/intro/04.png" width="40%"></br>
-<img src = "../public/images/intro/05.png" width="40%"></br>
-<img src = "../public/images/intro/06.png" width="40%"></br>
+<img src = "../../public/images/guide/intro/01.png" width="40%"></br>
+<img src = "../../public/images/guide/intro/02.png" width="40%"></br>
+<img src = "../../public/images/guide/intro/03.png" width="40%"></br>
+<img src = "../../public/images/guide/intro/04.png" width="40%"></br>
+<img src = "../../public/images/guide/intro/05.png" width="40%"></br>
+<img src = "../../public/images/guide/intro/06.png" width="40%"></br>
