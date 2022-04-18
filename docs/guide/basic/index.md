@@ -21,8 +21,8 @@ LiteBot 目前支持的 WebSocket 组件为：
 
 ### 开始配置
 
-1、按照 LLWebSocket 文档指示，下载并将 LLWebSocket 插件添加到您的 BDS；
-2、修改 LLWebSocket 配置文件：
+1. 按照 LLWebSocket 文档指示，下载并将 LLWebSocket 插件添加到您的 BDS；
+2. 修改 LLWebSocket 配置文件：
 
 ```json
 {
@@ -38,13 +38,11 @@ LiteBot 目前支持的 WebSocket 组件为：
 
 ## 配置 LiteBot
 
-### 组件准备
-
 ### 开始配置
 
 #### 对于 Windows 用户
 
-1. 下载 LiteBot；
+1. 下载 LiteBot（[前往下载](https://asurin219.coding.net/public-artifacts/litebot/litebot/packages)）；
 2. 将压缩包内的所有文件解压，进入解压后的文件夹，复制 examples 文件夹并重命名为 config；
 3. 打开 LiteBot 全局配置文件`./config/global_config.yml`，按照文件内的提示进行修改；
 4. 修改完成后,保存并退出。
