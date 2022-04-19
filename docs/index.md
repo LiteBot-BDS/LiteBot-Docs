@@ -18,7 +18,7 @@ features:
     title: 高度定制化
     desc: 超过60%的功能支持自定义
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/b3e102cd-5dad-4046-a02a-be33241d1cc7/kj9t8oji_w144_h144.png
-    title: n+n群组服互通
+    title: 群-服、服-服互通
     desc: 支持多群-多服互通
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/3863e74a-7870-4874-b1e1-00a8cdf47684/kj9t7ww3_w144_h144.png
     title: 流程自助化

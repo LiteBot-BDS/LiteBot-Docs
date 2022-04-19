@@ -124,9 +124,9 @@ httpGet(url, function(err, resp, body) {
 | `resp` | string | 响应代码 |
 | `body` | string | 响应体   |
 
-## 占位符转换
+## 文本格式化
 
-_tips:仅支持形如{string}的占位符_
+_tips:仅支持形如`{string}`的占位符_
 
 1. 创建一个 lang 对象：
 
