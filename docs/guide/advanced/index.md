@@ -43,19 +43,19 @@ group:
 
   以下是正则表达式的配置项和相关说明：
 
-  | regex（正则表达式）              | type（动作类型）   | content（内容） | 说明                                    | 使用示例                                                                                                                                                  |
-  | -------------------------------- | ------------------ | --------------- | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-  | "^(帮助)\$"                      | group_msg          | "帮助测试"      | 发送一条自定义内容的群消息"帮助测试"    | <img src = "../../../public/images/guide/advanced/regex_01.png" width="60%">                                                                              |
-  | "^(.+ \|)(查服\$)"               | run_cmd            | "/list"         | 向服务器执行一条预定的控制台指令"/list" | <img src = "../../../public/images/guide/advanced/regex_03.png" width="60%"> <img src = "../../../public/images/guide/advanced/regex_04.png" width="60%"> |
-  | "^(.+ \|)(/cmd )(.+\$)"          | run_cmd_raw        | -               | 向服务器执行一条自定义的控制台指令      | <img src = "../../../public/images/guide/advanced/regex_05.png" width="60%"> <img src = "../../../public/images/guide/advanced/regex_06.png" width="60%"> |
-  | "^(绑定 )([A-Za-z0-9 ]{4,20})\$" | bind_xboxid        | -               | 自助绑定白名单                          | <img src = "../../../public/images/guide/advanced/regex_07.png" width="60%">                                                                              |
-  | "^(申请白名单)\$"                | add_allowlist_self | -               | 自助添加白名单                          | <img src = "../../../public/images/guide/advanced/regex_08.png" width="60%">                                                                              |
-  | "^(我的信息)\$"                  | get_bind_info_self | -               | 查询本人的白名单绑定状态                | <img src = "../../../public/images/guide/advanced/regex_09.png" width="60%">                                                                              |
-  | "^(解绑)\$"                      | del_allowlist_self | -               | 自助解绑白名单                          | <img src = "../../../public/images/guide/advanced/regex_10.png" width="60%">                                                                              |
-  | "^(加白名单)(.+\$)"              | add_allowlist      | -               | 为目标玩家添加白名单                    | <img src = "../../../public/images/guide/advanced/regex_11.png" width="60%">                                                                              |
-  | "^(查绑定 )(.+\$)"               | get_bind_info      | -               | 查询目标玩家的白名单绑定状态            | <img src = "../../../public/images/guide/advanced/regex_12.png" width="60%">                                                                              |
-  | "^(解绑 )(.+\$)"                 | del_allowlist      | -               | 删除目标玩家的白名单                    | <img src = "../../../public/images/guide/advanced/regex_13.png" width="60%">                                                                              |
-  | "^(.+ \|)(/chat )(.+\$)"         | chat_to_server     | -               | 发送聊天消息到服务器                    | <img src = "../../../public/images/guide/advanced/regex_02.png" width="90%">                                                                              |
+  | regex（正则表达式）              | type（动作类型）       | content（内容） | 说明                                    | 使用示例                                                                                                                                                  |
+  | -------------------------------- | ---------------------- | --------------- | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+  | "^(帮助)\$"                      | group_msg              | "帮助测试"      | 发送一条自定义内容的群消息"帮助测试"    | <img src = "../../../public/images/guide/advanced/regex_01.png" width="60%">                                                                              |
+  | "^(.+ \|)(查服\$)"               | run_cmd                | "/list"         | 向服务器执行一条预定的控制台指令"/list" | <img src = "../../../public/images/guide/advanced/regex_02.png" width="60%"> <img src = "../../../public/images/guide/advanced/regex_03.png" width="60%"> |
+  | "^(.+ \|)(/cmd )(.+\$)"          | run_cmd_raw            | -               | 向服务器执行一条自定义的控制台指令      | <img src = "../../../public/images/guide/advanced/regex_04.png" width="60%"> <img src = "../../../public/images/guide/advanced/regex_05.png" width="60%"> |
+  | "^(绑定 )([A-Za-z0-9 ]{4,20})\$" | bind_xboxid            | -               | 自助绑定白名单                          | <img src = "../../../public/images/guide/advanced/regex_06.png" width="60%">                                                                              |
+  | "^(申请白名单)\$"                | add_allowlist_self     | -               | 自助添加白名单                          | <img src = "../../../public/images/guide/advanced/regex_07.png" width="60%">                                                                              |
+  | "^(我的信息)\$"                  | get_bind_info_self     | -               | 查询本人的白名单绑定状态                | <img src = "../../../public/images/guide/advanced/regex_08.png" width="60%">                                                                              |
+  | "^(解绑)\$"                      | del_allowlist_self     | -               | 自助解绑白名单                          | <img src = "../../../public/images/guide/advanced/regex_09.png" width="60%">                                                                              |
+  | "^(加白名单)(.+\$)"              | add_allowlist          | -               | 为目标玩家添加白名单                    | <img src = "../../../public/images/guide/advanced/regex_10.png" width="60%">                                                                              |
+  | "^(查绑定 )(.+\$)"               | get_bind_info          | -               | 查询目标玩家的白名单绑定状态            | <img src = "../../../public/images/guide/advanced/regex_11.png" width="60%">                                                                              |
+  | "^(解绑 )(.+\$)"                 | del_allowlist          | -               | 删除目标玩家的白名单                    | <img src = "../../../public/images/guide/advanced/regex_12.png" width="60%">                                                                              |
+  | "^(.+)( /chat )(.+\$)"           | private_chat_to_server | -               | 发送聊天消息到某个服务器                | <img src = "../../../public/images/guide/advanced/regex_13.png" width="90%">                                                                              |
 
 ## 语言格式配置
 
@@ -65,7 +65,7 @@ group:
 
   ### "message_prefix"
 
-  - 全局消息前缀（转发到群聊/服务器）
+  - 全局消息前缀（转发到群聊/隔壁服务器）
 
     | 配置项              | 说明                             | 支持的占位符                 | 示例配置               |
     | ------------------- | -------------------------------- | ---------------------------- | ---------------------- |
@@ -75,7 +75,7 @@ group:
 
   ### "chat_format"
 
-  - 聊天消息格式（转发到群聊/服务器）
+  - 聊天消息格式（转发到群聊/隔壁服务器）
 
     | 配置项              | 说明                             | 支持的占位符                                                      | 示例配置                         |
     | ------------------- | -------------------------------- | ----------------------------------------------------------------- | -------------------------------- |
@@ -107,7 +107,7 @@ group:
 
   ### "join_or_leave_from_servers"
 
-  - 玩家进入/离开服务器消息格式（转发到群聊/服务器）
+  - 玩家进入/离开服务器消息格式（转发到群聊/隔壁服务器）
 
     | 配置项        | 说明           | 支持的占位符                 | 示例配置                        |
     | ------------- | -------------- | ---------------------------- | ------------------------------- |
@@ -116,22 +116,22 @@ group:
 
   ### "runcmd_feedback"
 
-  - 群内执行指令的反馈消息格式（转发到群聊）
+  - 群内执行指令后的反馈消息格式（转发到群聊）。配置项即为控制台执行相关指令后的输出内容，当输出内容与配置项不匹配时，将会返回原始输出内容
 
-    | 配置项                          | 说明                             | 支持的占位符                                                                           | 示例配置                                                                       |
-    | ------------------------------- | -------------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-    | "default"                       | 默认反馈（匹配不到配置项时显示） | `{result} : 指令执行结果 | "\n{result}"                                                |
-    | "get_online_players"            | 服务器在线人数                   | `{online}` : 当前在线人数<br>`{max_online}` : 最大在线人数<br>`{players}` : 在线的玩家 | "\n 当前在线人数：{online}\n 最大在线人数：{max_online}\n 在线玩家：{players}" |
-    | "No targets matched selector"   | 没有匹配的目标                   | `{server_name}` : 服务器名称                                                           | "\n 没有匹配的目标"                                                            |
-    | "Player added to allowlist"     | 玩家已成功添加到白名单           | -                                                                                      | "\n 玩家已成功添加到白名单"                                                    |
-    | "Player already in allowlist"   | 玩家已经添加过白名单了           |                                                                                        | "\n 玩家已经添加过白名单了"                                                    |
-    | "Player removed from allowlist" | 玩家已从白名单中移除             |                                                                                        | "\n 玩家已从白名单中移除"                                                      |
-    | "Player not in allowlist"       | 玩家未在白名单内                 |                                                                                        | "\n 玩家未在白名单内"                                                          |
+    | 配置项                          | 说明                     | 支持的占位符                                                                           | 示例配置                                                                       |
+    | ------------------------------- | ------------------------ | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+    | "default"                       | 默认反馈（原始输出内容） | `{result} : 指令执行结果 | "\n{result}"                                                |
+    | "get_online_players"            | 服务器在线人数           | `{online}` : 当前在线人数<br>`{max_online}` : 最大在线人数<br>`{players}` : 在线的玩家 | "\n 当前在线人数：{online}\n 最大在线人数：{max_online}\n 在线玩家：{players}" |
+    | "No targets matched selector"   | 没有匹配的目标           | `{server_name}` : 服务器名称                                                           | "\n 没有匹配的目标"                                                            |
+    | "Player added to allowlist"     | 玩家已成功添加到白名单   | -                                                                                      | "\n 玩家已成功添加到白名单"                                                    |
+    | "Player already in allowlist"   | 玩家已经添加过白名单了   | -                                                                                      | "\n 玩家已经添加过白名单了"                                                    |
+    | "Player removed from allowlist" | 玩家已从白名单中移除     | -                                                                                      | "\n 玩家已从白名单中移除"                                                      |
+    | "Player not in allowlist"       | 玩家未在白名单内         | -                                                                                      | "\n 玩家未在白名单内"                                                          |
 
   ### "player_die"
 
-  - 玩家在游戏内的死亡消息格式（转发到群聊）
+  - 玩家在游戏内死亡的消息格式（转发到群聊/隔壁服务器）
 
-    | 配置项        | 说明                               | 支持的占位符                                             | 示例配置                                            |
-    | ------------- | ---------------------------------- | -------------------------------------------------------- | --------------------------------------------------- |
-    | "player_chat" | 玩家在服内聊天（转发到绑定的群聊） | `{player}` : 玩家 XboxID<br>`{src}` : 伤害源（可能为空） | "§b\[{group_name}\] §a<{group_sender}>§r {content}" |
+    | 配置项                  | 说明             | 支持的占位符                                                            | 示例配置                                            |
+    | ----------------------- | ---------------- | ----------------------------------------------------------------------- | --------------------------------------------------- |
+    | "unknown"、"drowning"等 | 玩家在游戏内死亡 | `{player}` : 玩家 XboxID<br>`{src}` : 伤害源（某些死亡类型的 src 为空） | "§b\[{group_name}\] §a<{group_sender}>§r {content}" |

@@ -13,7 +13,9 @@ group:
   注意：功能尚未完善
 </Alert>
 # 工具类API
+
 ## 日志输出
+
 ### 输出一段日志到控制台
 
 1. 首先，创建一个日志对象：
@@ -152,15 +154,18 @@ console.log(result);
 
 ## SQLite3
 
-1.首先，创建一个 sqlite3 对象
+1. 创建一个 sqlite3 对象
 
 ```js
+const sqlite3_helper = require('./sqlite3_helper');
 const db = new sqlite3_helper(path);
 ```
 
 | 参数   | 数据类型 | 含义                   |
 | ------ | -------- | ---------------------- |
 | `path` | string   | sqlite3 数据库文件路径 |
+
+2. 接下来，你就可以参照下列 API，执行相关操作了
 
 ### 遍历
 
