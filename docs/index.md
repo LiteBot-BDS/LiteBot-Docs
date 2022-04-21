@@ -1,5 +1,5 @@
 ---
-title: LiteBot - 下一代群组服机器人
+title: LiteBot - 下一代基岩版MC群组服机器人
 order: 10
 hero:
   title: LiteBot
